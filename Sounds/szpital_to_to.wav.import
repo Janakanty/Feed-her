@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/szpital_to_to.wav-ba434d5be76e38d377d529d0331a4118.sample"
+
+[deps]
+
+source_file="res://Sounds/szpital_to_to.wav"
+dest_files=[ "res://.import/szpital_to_to.wav-ba434d5be76e38d377d529d0331a4118.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

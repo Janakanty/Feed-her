@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/gulMenu.wav-0e82a9170d0a50c590747975679f2fbf.sample"
+
+[deps]
+
+source_file="res://Music/gulMenu.wav"
+dest_files=[ "res://.import/gulMenu.wav-0e82a9170d0a50c590747975679f2fbf.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

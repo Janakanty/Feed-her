@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Rooms/document/drzwi urząd.png" type="Texture" id=1]
+[ext_resource path="res://Rooms/realy_monster_room/doormon1.gd" type="Script" id=2]
+
+[node name="Node2D" type="StaticBody2D"]
+script = ExtResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2( 1.61494, -20.6053 )
+polygon = PoolVector2Array( -11.8715, 7.22423, -47.9339, 25.2554, -48.641, -48.2837, -13.6392, -64.5471 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -25.2068, -41.3787 )
+scale = Vector2( 0.167496, 0.167496 )
+texture = ExtResource( 1 )
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_Area2D_mouse_exited"]

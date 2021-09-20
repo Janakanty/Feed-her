@@ -1,0 +1,331 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Riddles/doc_code/Panel3.gd" type="Script" id=1]
+[ext_resource path="res://Riddles/Music_code/gama/D4.wav" type="AudioStream" id=2]
+[ext_resource path="res://Riddles/Music_code/gama/C4.wav" type="AudioStream" id=3]
+[ext_resource path="res://Riddles/Music_code/gama/A4.wav" type="AudioStream" id=4]
+[ext_resource path="res://Riddles/Music_code/gama/G4.wav" type="AudioStream" id=5]
+[ext_resource path="res://Riddles/Music_code/gama/E4.wav" type="AudioStream" id=6]
+[ext_resource path="res://Riddles/Music_code/gama/F4.wav" type="AudioStream" id=7]
+[ext_resource path="res://Riddles/Music_code/gama/H4.wav" type="AudioStream" id=8]
+[ext_resource path="res://Riddles/Music_code/gama/C5.wav" type="AudioStream" id=9]
+[ext_resource path="res://Riddles/Music_code/gama/bad.wav" type="AudioStream" id=10]
+[ext_resource path="res://Riddles/Music_code/gama/good.wav" type="AudioStream" id=11]
+[ext_resource path="res://Fonts/PressSrart.tres" type="DynamicFont" id=12]
+
+[node name="Control" type="Control"]
+anchor_left = 0.126
+anchor_top = 0.142
+anchor_right = 0.874
+anchor_bottom = 0.857
+margin_left = -1.6114
+margin_top = -0.889206
+margin_right = -1.56348
+margin_bottom = -0.889099
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -254.0
+margin_right = 254.0
+margin_bottom = 429.0
+color = Color( 0.415686, 0.415686, 0.415686, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 50.0
+margin_top = 25.0
+margin_right = -51.0
+margin_bottom = -15.0
+color = Color( 0.286275, 0.286275, 0.286275, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -204.0
+margin_top = -198.5
+margin_right = 204.0
+margin_bottom = 198.5
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect/VBoxContainer"]
+margin_top = 10.0
+margin_right = 408.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 0, 50 )
+color = Color( 0.705882, 0.635294, 0.960784, 0.356863 )
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer/ColorRect"]
+anchor_left = 0.125
+anchor_right = 0.882
+anchor_bottom = 0.966
+margin_top = 3.0
+margin_right = 0.143982
+margin_bottom = 4.7
+rect_min_size = Vector2( 0, 50 )
+custom_fonts/font = ExtResource( 12 )
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect/VBoxContainer"]
+margin_top = 64.0
+margin_right = 408.0
+margin_bottom = 74.0
+rect_min_size = Vector2( 0, 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect/VBoxContainer"]
+margin_top = 78.0
+margin_right = 408.0
+margin_bottom = 178.0
+rect_min_size = Vector2( 0, 100 )
+alignment = 1
+
+[node name="Button" type="Button" parent="ColorRect/VBoxContainer/HBoxContainer"]
+margin_left = 50.0
+margin_right = 150.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 0 )
+text = "1"
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer/HBoxContainer/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 12 )
+text = "1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="ColorRect/VBoxContainer/HBoxContainer"]
+margin_left = 154.0
+margin_right = 254.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 0 )
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer/HBoxContainer/Button2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 12 )
+text = "2"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="ColorRect/VBoxContainer/HBoxContainer"]
+margin_left = 258.0
+margin_right = 358.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 0 )
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer/HBoxContainer/Button3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 12 )
+text = "3"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ColorRect/VBoxContainer"]
+margin_top = 182.0
+margin_right = 408.0
+margin_bottom = 282.0
+rect_min_size = Vector2( 0, 100 )
+alignment = 1
+
+[node name="Button4" type="Button" parent="ColorRect/VBoxContainer/HBoxContainer2"]
+margin_left = 50.0
+margin_right = 150.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 0 )
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer/HBoxContainer2/Button4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 12 )
+text = "4"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button5" type="Button" parent="ColorRect/VBoxContainer/HBoxContainer2"]
+margin_left = 154.0
+margin_right = 254.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 0 )
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer/HBoxContainer2/Button5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 12 )
+text = "5"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button6" type="Button" parent="ColorRect/VBoxContainer/HBoxContainer2"]
+margin_left = 258.0
+margin_right = 358.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 0 )
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer/HBoxContainer2/Button6"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 12 )
+text = "6"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="ColorRect/VBoxContainer"]
+margin_top = 286.0
+margin_right = 408.0
+margin_bottom = 386.0
+rect_min_size = Vector2( 0, 100 )
+alignment = 1
+
+[node name="Button7" type="Button" parent="ColorRect/VBoxContainer/HBoxContainer3"]
+margin_left = 50.0
+margin_right = 150.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 0 )
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer/HBoxContainer3/Button7"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 12 )
+text = "7"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button8" type="Button" parent="ColorRect/VBoxContainer/HBoxContainer3"]
+margin_left = 154.0
+margin_right = 254.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 0 )
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer/HBoxContainer3/Button8"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 12 )
+text = "8"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button9" type="Button" parent="ColorRect/VBoxContainer/HBoxContainer3"]
+margin_left = 258.0
+margin_right = 358.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 0 )
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer/HBoxContainer3/Button9"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.36743
+margin_right = 3.36743
+custom_fonts/font = ExtResource( 12 )
+text = "9"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+
+[node name="AudioStreamPlayer9" type="AudioStreamPlayer" parent="."]
+
+[node name="good" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+
+[node name="bad" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+
+[node name="Buttonn" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.549
+anchor_right = 0.5
+anchor_bottom = 0.549
+margin_left = -81.3235
+margin_top = 31.5475
+margin_right = 81.6765
+margin_bottom = 96.5475
+custom_fonts/font = ExtResource( 12 )
+custom_colors/font_color_hover = Color( 0.447059, 0.176471, 0.176471, 1 )
+text = "V"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="ColorRect/VBoxContainer/HBoxContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/HBoxContainer/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/HBoxContainer/Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/HBoxContainer2/Button4" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/HBoxContainer2/Button5" to="." method="_on_Button5_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/HBoxContainer2/Button6" to="." method="_on_Button6_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/HBoxContainer3/Button7" to="." method="_on_Button7_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/HBoxContainer3/Button8" to="." method="_on_Button8_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/HBoxContainer3/Button9" to="." method="_on_Button9_pressed"]
+[connection signal="pressed" from="Buttonn" to="." method="_on_Buttonn_pressed"]

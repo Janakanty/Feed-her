@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/A4.wav-08cb842d863bc2f278fbf93d313c5c12.sample"
+
+[deps]
+
+source_file="res://Riddles/Music_code/gama/A4.wav"
+dest_files=[ "res://.import/A4.wav-08cb842d863bc2f278fbf93d313c5c12.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

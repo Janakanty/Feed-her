@@ -1,0 +1,640 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Fonts/paper.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Riddles/Paper_code/Paper.gd" type="Script" id=2]
+[ext_resource path="res://Riddles/Paper_code/paper.wav" type="AudioStream" id=3]
+[ext_resource path="res://Riddles/Paper_code/paper_end.wav" type="AudioStream" id=4]
+
+[node name="Control" type="Control"]
+anchor_left = 0.083
+anchor_top = 0.059
+anchor_right = 0.917
+anchor_bottom = 0.941
+margin_left = -0.860016
+margin_top = -0.220005
+margin_right = 0.859863
+margin_bottom = 0.219971
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect4" type="TextureRect" parent="."]
+anchor_left = -0.003
+anchor_top = 0.056
+anchor_right = 0.992
+anchor_bottom = 0.937
+margin_left = -0.191
+margin_top = -0.368
+margin_right = 0.823975
+margin_bottom = -49.9611
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect4"]
+anchor_left = 0.033
+anchor_top = 0.033
+anchor_right = 0.955
+anchor_bottom = 0.293
+margin_left = 34.332
+margin_top = -16.07
+margin_right = 34.8199
+margin_bottom = 3.52998
+rect_rotation = 0.92433
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ColorRect4/ColorRect"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 9.51828
+margin_top = -26.5547
+margin_right = -3.75366
+margin_bottom = -26.1547
+rect_rotation = 2.3009
+custom_fonts/font = ExtResource( 1 )
+text = "Tarantule chcą mojej śmierci!"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="ColorRect4/ColorRect"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 1.0
+anchor_top = 0.107
+anchor_right = 1.0
+anchor_bottom = 0.107
+margin_left = -245.995
+margin_top = -10.105
+margin_right = 82.0049
+margin_bottom = 73.895
+rect_rotation = 2.3009
+custom_fonts/font = ExtResource( 1 )
+text = "14"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="ColorRect4/ColorRect"]
+anchor_right = 1.001
+anchor_bottom = 0.993
+margin_left = 6.0
+margin_top = -16.0
+margin_right = 5.25574
+margin_bottom = -4.04181
+rect_rotation = 0.930473
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="ColorRect4"]
+anchor_left = 0.034
+anchor_top = 0.383
+anchor_right = 0.951
+anchor_bottom = 0.631
+margin_left = 4.71703
+margin_top = 0.290344
+margin_right = 0.0489502
+margin_bottom = 30.8103
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ColorRect4/ColorRect2"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 11.5596
+margin_top = 22.6389
+margin_right = 18.6957
+margin_bottom = 22.7989
+rect_rotation = -1.01008
+custom_fonts/font = ExtResource( 1 )
+text = "P.Renata l.40 ma problem z pająkami"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="ColorRect4/ColorRect2"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.973
+anchor_top = 0.99
+anchor_right = 0.976
+anchor_bottom = 1.0
+margin_left = -103.474
+margin_top = -100.176
+margin_right = 56.1488
+margin_bottom = -0.439911
+rect_rotation = -1.01008
+custom_fonts/font = ExtResource( 1 )
+text = "12"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton2" type="TextureButton" parent="ColorRect4/ColorRect2"]
+anchor_right = 1.001
+anchor_bottom = 0.993
+margin_left = 2.45021
+margin_top = -0.205566
+margin_right = 2.70593
+margin_bottom = -0.247375
+
+[node name="ColorRect3" type="ColorRect" parent="ColorRect4"]
+anchor_left = 0.062
+anchor_top = 0.752
+anchor_right = 0.962
+anchor_bottom = 1.051
+margin_left = 0.369286
+margin_top = 0.197083
+margin_right = -22.0309
+margin_bottom = 0.0870972
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ColorRect4/ColorRect3"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_top = 0.012
+anchor_right = 1.003
+anchor_bottom = 1.0
+margin_left = -3.0
+margin_right = -1.24207
+margin_bottom = -9.0
+custom_fonts/font = ExtResource( 1 )
+text = "Pająki w mieszkaniu. Czy powiniśmy się ich bać?"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="ColorRect4/ColorRect3"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 1.0
+anchor_top = 0.961
+anchor_right = 1.0
+anchor_bottom = 0.961
+margin_left = -116.0
+margin_top = -79.8921
+margin_right = 3.00024
+margin_bottom = 0.10791
+custom_fonts/font = ExtResource( 1 )
+text = "55"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton3" type="TextureButton" parent="ColorRect4/ColorRect3"]
+anchor_right = 1.001
+anchor_bottom = 0.993
+margin_left = -2.0
+margin_top = -2.0
+margin_right = 0.585938
+margin_bottom = -2.44728
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect5" type="TextureRect" parent="."]
+anchor_left = -0.003
+anchor_top = 0.056
+anchor_right = 0.992
+anchor_bottom = 0.937
+margin_left = -0.191
+margin_top = -0.368
+margin_right = 0.823975
+margin_bottom = -49.9611
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect5"]
+anchor_left = 0.033
+anchor_top = 0.033
+anchor_right = 0.955
+anchor_bottom = 0.293
+margin_left = 33.9616
+margin_top = -13.1971
+margin_right = 34.7216
+margin_bottom = 4.00291
+rect_rotation = 0.92433
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ColorRect5/ColorRect"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 9.51828
+margin_top = -26.5547
+margin_right = -3.75366
+margin_bottom = -26.1547
+rect_rotation = 2.3009
+custom_fonts/font = ExtResource( 1 )
+text = "Mama małego Tomka zdecydowała się na niebezpieczną operację dziecka"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="ColorRect5/ColorRect"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.97
+anchor_right = 1.0
+anchor_bottom = 0.128
+margin_left = -85.192
+margin_top = -14.0648
+margin_right = 29.6399
+margin_bottom = 43.4424
+rect_rotation = 2.3009
+custom_fonts/font = ExtResource( 1 )
+text = "44"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton4" type="TextureButton" parent="ColorRect5/ColorRect"]
+anchor_right = 1.001
+anchor_bottom = 0.993
+margin_left = 3.0
+margin_top = -16.0
+margin_right = 5.25574
+margin_bottom = -21.0418
+rect_rotation = 0.930473
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="ColorRect5"]
+anchor_left = 0.034
+anchor_top = 0.383
+anchor_right = 0.951
+anchor_bottom = 0.631
+margin_left = 4.71703
+margin_top = 0.290344
+margin_right = 0.0489502
+margin_bottom = 30.8103
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ColorRect5/ColorRect2"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 11.5596
+margin_top = 22.6389
+margin_right = 18.6957
+margin_bottom = 22.7989
+rect_rotation = -1.01008
+custom_fonts/font = ExtResource( 1 )
+text = "Polka chce śmierci syna? Szanse są duże..."
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="ColorRect5/ColorRect2"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 1.0
+anchor_top = 0.907
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -135.864
+margin_top = -58.381
+margin_right = 21.1362
+margin_bottom = -0.439911
+rect_rotation = -1.01008
+custom_fonts/font = ExtResource( 1 )
+text = "18"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton5" type="TextureButton" parent="ColorRect5/ColorRect2"]
+anchor_right = 1.001
+anchor_bottom = 0.993
+margin_left = 2.45021
+margin_top = -0.205566
+margin_right = 2.70593
+margin_bottom = -0.247375
+
+[node name="ColorRect3" type="ColorRect" parent="ColorRect5"]
+anchor_left = 0.062
+anchor_top = 0.752
+anchor_right = 0.962
+anchor_bottom = 1.051
+margin_left = 0.369286
+margin_top = 0.197083
+margin_right = -22.0309
+margin_bottom = 0.0870972
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ColorRect5/ColorRect3"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_top = 0.012
+anchor_right = 1.003
+anchor_bottom = 1.0
+margin_left = -3.0
+margin_right = -1.24207
+margin_bottom = -9.0
+custom_fonts/font = ExtResource( 1 )
+text = "Operacja to jedyna szansa dla Tomka na normalne życie"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="ColorRect5/ColorRect3"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 1.0
+anchor_top = 0.961
+anchor_right = 1.003
+anchor_bottom = 1.0
+margin_left = -185.0
+margin_top = -49.8921
+margin_right = -1.24182
+margin_bottom = -9.09998
+custom_fonts/font = ExtResource( 1 )
+text = "99"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton6" type="TextureButton" parent="ColorRect5/ColorRect3"]
+anchor_right = 1.001
+anchor_bottom = 0.993
+margin_left = -2.0
+margin_top = -2.0
+margin_right = 0.585938
+margin_bottom = -2.44728
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect6" type="TextureRect" parent="."]
+anchor_left = -0.003
+anchor_top = 0.056
+anchor_right = 0.992
+anchor_bottom = 0.937
+margin_left = -0.191
+margin_top = -0.368
+margin_right = 0.823975
+margin_bottom = -49.9611
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect6"]
+anchor_left = 0.033
+anchor_top = 0.033
+anchor_right = 0.955
+anchor_bottom = 0.293
+margin_left = 33.9616
+margin_top = -13.1971
+margin_right = 34.7216
+margin_bottom = 4.00291
+rect_rotation = 0.92433
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ColorRect6/ColorRect"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 9.51828
+margin_top = -26.5547
+margin_right = -3.75366
+margin_bottom = -26.1547
+rect_rotation = 2.3009
+custom_fonts/font = ExtResource( 1 )
+text = "Polityk opocyzji zadeklarował  \"Osobiście popieram, lecz nie w takiej formie\""
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="ColorRect6/ColorRect"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.992
+anchor_top = 0.922
+anchor_right = 1.0
+anchor_bottom = 0.922
+margin_left = -166.494
+margin_top = -56.2372
+margin_right = -9.27173
+margin_bottom = 42.7628
+rect_rotation = 2.3009
+custom_fonts/font = ExtResource( 1 )
+text = "75"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton7" type="TextureButton" parent="ColorRect6/ColorRect"]
+anchor_right = 1.001
+anchor_bottom = 0.993
+margin_left = 3.0
+margin_top = -16.0
+margin_right = 5.25574
+margin_bottom = -21.0418
+rect_rotation = 0.930473
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="ColorRect6"]
+anchor_left = 0.034
+anchor_top = 0.383
+anchor_right = 0.951
+anchor_bottom = 0.631
+margin_left = 4.71703
+margin_top = 0.290344
+margin_right = 0.0489502
+margin_bottom = 30.8103
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ColorRect6/ColorRect2"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 11.5596
+margin_top = 22.6389
+margin_right = 18.6957
+margin_bottom = 22.7989
+rect_rotation = -1.01008
+custom_fonts/font = ExtResource( 1 )
+text = "Polityk zgada się z wrogiem. Partia ukarze swojego członka?"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="ColorRect6/ColorRect2"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.987
+anchor_top = 0.829
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -127.899
+margin_top = -33.7187
+margin_right = 21.1362
+margin_bottom = -0.439911
+rect_rotation = -1.01008
+custom_fonts/font = ExtResource( 1 )
+text = "11"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton8" type="TextureButton" parent="ColorRect6/ColorRect2"]
+anchor_right = 1.001
+anchor_bottom = 0.993
+margin_left = 2.45021
+margin_top = -0.205566
+margin_right = 2.70593
+margin_bottom = -0.247375
+
+[node name="ColorRect3" type="ColorRect" parent="ColorRect6"]
+anchor_left = 0.062
+anchor_top = 0.752
+anchor_right = 0.962
+anchor_bottom = 1.051
+margin_left = 0.369286
+margin_top = 0.197083
+margin_right = -22.0309
+margin_bottom = 0.0870972
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ColorRect6/ColorRect3"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_top = 0.012
+anchor_right = 1.003
+anchor_bottom = 1.0
+margin_left = -3.0
+margin_right = -1.24207
+margin_bottom = -9.0
+custom_fonts/font = ExtResource( 1 )
+text = "Oni nigdy ze sobą się nie zgodzą... A może jednak?"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="ColorRect6/ColorRect3"]
+modulate = Color( 0, 0, 0, 1 )
+anchor_left = 0.987
+anchor_top = 0.966
+anchor_right = 1.003
+anchor_bottom = 1.0
+margin_left = -112.618
+margin_top = -59.0726
+margin_right = -1.24182
+margin_bottom = -8.09998
+custom_fonts/font = ExtResource( 1 )
+text = "55"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton9" type="TextureButton" parent="ColorRect6/ColorRect3"]
+anchor_right = 1.001
+anchor_bottom = 0.993
+margin_left = -2.0
+margin_top = -2.0
+margin_right = 0.585938
+margin_bottom = -2.44728
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+[connection signal="mouse_entered" from="ColorRect4/ColorRect/TextureButton" to="." method="_on_TextureButton_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect4/ColorRect/TextureButton" to="." method="_on_TextureButton_mouse_exited"]
+[connection signal="pressed" from="ColorRect4/ColorRect/TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="mouse_entered" from="ColorRect4/ColorRect2/TextureButton2" to="." method="_on_TextureButton2_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect4/ColorRect2/TextureButton2" to="." method="_on_TextureButton2_mouse_exited"]
+[connection signal="pressed" from="ColorRect4/ColorRect2/TextureButton2" to="." method="_on_TextureButton2_pressed"]
+[connection signal="mouse_entered" from="ColorRect4/ColorRect3/TextureButton3" to="." method="_on_TextureButton3_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect4/ColorRect3/TextureButton3" to="." method="_on_TextureButton3_mouse_exited"]
+[connection signal="pressed" from="ColorRect4/ColorRect3/TextureButton3" to="." method="_on_TextureButton3_pressed"]
+[connection signal="mouse_entered" from="ColorRect5/ColorRect/TextureButton4" to="." method="_on_TextureButton4_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect5/ColorRect/TextureButton4" to="." method="_on_TextureButton4_mouse_exited"]
+[connection signal="pressed" from="ColorRect5/ColorRect/TextureButton4" to="." method="_on_TextureButton4_pressed"]
+[connection signal="mouse_entered" from="ColorRect5/ColorRect2/TextureButton5" to="." method="_on_TextureButton5_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect5/ColorRect2/TextureButton5" to="." method="_on_TextureButton5_mouse_exited"]
+[connection signal="pressed" from="ColorRect5/ColorRect2/TextureButton5" to="." method="_on_TextureButton5_pressed"]
+[connection signal="mouse_entered" from="ColorRect5/ColorRect3/TextureButton6" to="." method="_on_TextureButton6_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect5/ColorRect3/TextureButton6" to="." method="_on_TextureButton6_mouse_exited"]
+[connection signal="pressed" from="ColorRect5/ColorRect3/TextureButton6" to="." method="_on_TextureButton6_pressed"]
+[connection signal="mouse_entered" from="ColorRect6/ColorRect/TextureButton7" to="." method="_on_TextureButton7_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect6/ColorRect/TextureButton7" to="." method="_on_TextureButton7_mouse_exited"]
+[connection signal="pressed" from="ColorRect6/ColorRect/TextureButton7" to="." method="_on_TextureButton7_pressed"]
+[connection signal="mouse_entered" from="ColorRect6/ColorRect2/TextureButton8" to="." method="_on_TextureButton8_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect6/ColorRect2/TextureButton8" to="." method="_on_TextureButton8_mouse_exited"]
+[connection signal="pressed" from="ColorRect6/ColorRect2/TextureButton8" to="." method="_on_TextureButton8_pressed"]
+[connection signal="mouse_entered" from="ColorRect6/ColorRect3/TextureButton9" to="." method="_on_TextureButton9_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect6/ColorRect3/TextureButton9" to="." method="_on_TextureButton9_mouse_exited"]
+[connection signal="pressed" from="ColorRect6/ColorRect3/TextureButton9" to="." method="_on_TextureButton9_pressed"]

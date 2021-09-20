@@ -1,0 +1,99 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Rooms/realy_monster_room/potwór1.png" type="Texture" id=1]
+[ext_resource path="res://Rooms/realy_monster_room/potwór2.png" type="Texture" id=2]
+[ext_resource path="res://Rooms/realy_monster_room/potwor.gd" type="Script" id=3]
+[ext_resource path="res://Rooms/realy_monster_room/breach.wav" type="AudioStream" id=4]
+[ext_resource path="res://Rooms/realy_monster_room/pixels.png" type="Texture" id=5]
+[ext_resource path="res://Rooms/realy_monster_room/pixels2.png" type="Texture" id=6]
+[ext_resource path="res://Rooms/realy_monster_room/orzeł 1.png" type="Texture" id=7]
+[ext_resource path="res://Rooms/realy_monster_room/orzeł 3.png" type="Texture" id=8]
+[ext_resource path="res://Rooms/realy_monster_room/orzeł 2.png" type="Texture" id=9]
+[ext_resource path="res://Sounds/wrwarmonster.wav" type="AudioStream" id=10]
+[ext_resource path="res://Sounds/ded.wav" type="AudioStream" id=11]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "potwor",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 9 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "orzel",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 988.051
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -16.8369, -167.247 )
+scale = Vector2( 1.7957, 1.7957 )
+frames = SubResource( 1 )
+animation = "potwor"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+polygon = PoolVector2Array( -117.202, 42.798, -47.7908, 192.3, 125.738, 235.015, 301.937, 344.472, 547.548, 349.811, 608.95, 221.667, 512.842, 32.1193, 301.937, -71.9982, 48.3176, -200.143, -151.908, -274.894, -221.32, -266.885, -215.981, -114.713, -149.239, 26.78 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+visible = false
+polygon = PoolVector2Array( -82.4966, 120.219, -127.881, 13.4316, -215.981, -109.374, -210.641, -264.215, -154.578, -365.663, -125.211, -461.771, 10.9421, -536.522, 139.087, -525.844, 307.277, -453.762, 438.091, -266.885, 534.199, -80.0072, 606.281, 285.739, 523.521, 333.793, 307.277, 320.445, 195.15, 277.73, 117.729, 232.345, -53.1301, 184.291 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Particles2D" type="CPUParticles2D" parent="."]
+position = Vector2( 146.832, -10.6786 )
+scale = Vector2( 5.24224, 6.28809 )
+emitting = false
+lifetime = 3.0
+speed_scale = 2.0
+texture = ExtResource( 5 )
+gravity = Vector2( 0, -70 )
+orbit_velocity = -0.24
+orbit_velocity_random = 0.64
+tangential_accel = -2.08
+damping = 0.71
+damping_random = 0.42
+angle = -30.0
+angle_random = 0.79
+
+[node name="Particles2D2" type="CPUParticles2D" parent="."]
+position = Vector2( 157.511, -72.0813 )
+scale = Vector2( 6.00007, 6.04061 )
+emitting = false
+speed_scale = 2.12
+texture = ExtResource( 6 )
+gravity = Vector2( 0, -70 )
+linear_accel = 12.5
+radial_accel = 25.0
+damping = 9.38
+angle = 135.0
+angle_random = 1.0
+
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+shape = SubResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+[connection signal="input_event" from="Area2D" to="." method="_on_Area2D_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_Area2D_mouse_exited"]
+[connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
+[connection signal="body_exited" from="Area2D2" to="." method="_on_Area2D2_body_exited"]

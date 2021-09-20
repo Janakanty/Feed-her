@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Rooms/document/drzwi urząd.png" type="Texture" id=1]
+[ext_resource path="res://Rooms/document/door2.gd" type="Script" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 74.6844
+
+[node name="Node2D" type="StaticBody2D"]
+script = ExtResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2( 4.97853, 8.82607 )
+polygon = PoolVector2Array( -3.97958, 2.61551, -5.10205, 25.0648, -42.9439, 8.53865, -42.6289, -65.1667, -4.5408, -46.2116 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -22.6841, -11.9473 )
+scale = Vector2( 0.167496, 0.167496 )
+texture = ExtResource( 1 )
+flip_h = true
+
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+visible = false
+position = Vector2( -26.4883, 6.30672 )
+shape = SubResource( 1 )
+[connection signal="input_event" from="Area2D" to="." method="_on_Area2D_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_Area2D_mouse_exited"]
+[connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]

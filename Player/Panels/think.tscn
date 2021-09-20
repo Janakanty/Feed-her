@@ -1,0 +1,64 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Fonts/Changa.tres" type="DynamicFont" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 0.385
+anchor_bottom = 0.148
+margin_right = 0.799988
+margin_bottom = 0.160004
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 3.0
+color = Color( 0.278431, 0.282353, 0.298039, 0.886275 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 14.0
+margin_top = 13.0
+margin_right = 3.00006
+color = Color( 0.192157, 0.172549, 0.172549, 0.352941 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 28.0
+margin_right = -24.9999
+custom_fonts/font = ExtResource( 1 )
+text = "cos tu jest nie tak...."
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -98.0913
+margin_top = -48.789
+margin_right = 9.90869
+margin_bottom = 16.211
+custom_fonts/font = ExtResource( 1 )
+text = "[PPM]"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

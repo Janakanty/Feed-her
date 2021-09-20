@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/paper.wav-1fd907e586c4b62c73cf718ce02fe25c.sample"
+
+[deps]
+
+source_file="res://Riddles/Paper_code/paper.wav"
+dest_files=[ "res://.import/paper.wav-1fd907e586c4b62c73cf718ce02fe25c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

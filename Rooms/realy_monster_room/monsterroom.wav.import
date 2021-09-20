@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/monsterroom.wav-d4bd83f3ecb68203bb56d432fbfa9ea6.sample"
+
+[deps]
+
+source_file="res://Rooms/realy_monster_room/monsterroom.wav"
+dest_files=[ "res://.import/monsterroom.wav-d4bd83f3ecb68203bb56d432fbfa9ea6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

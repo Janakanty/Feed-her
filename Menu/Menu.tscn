@@ -1,0 +1,94 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Fonts/PressSrart.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Menu/Menu.gd" type="Script" id=2]
+[ext_resource path="res://Music/gulMenu.wav" type="AudioStream" id=3]
+[ext_resource path="res://Menu/ding.wav" type="AudioStream" id=4]
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -11.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 6.72717
+margin_right = 6.72717
+color = Color( 0.0313726, 0.0313726, 0.0313726, 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -232.5
+margin_top = -451.5
+margin_right = 232.5
+margin_bottom = 451.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer"]
+margin_right = 465.0
+margin_bottom = 465.0
+rect_min_size = Vector2( 0, 465 )
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+margin_top = 469.0
+margin_right = 465.0
+margin_bottom = 569.0
+rect_min_size = Vector2( 0, 100 )
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+text = "Start"
+flat = true
+expand_icon = true
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+margin_top = 573.0
+margin_right = 465.0
+margin_bottom = 673.0
+rect_min_size = Vector2( 0, 100 )
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Wyjście"
+flat = true
+expand_icon = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = 4.906
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+margin_left = 155.184
+margin_top = 100.49
+margin_right = -193.816
+margin_bottom = 504.49
+custom_fonts/font = ExtResource( 1 )
+text = "- Nie pamiętam już od jak dawna tu jestem… ani skąd się tu wziąłem.
+- Wiem tylko tyle, że jest tutaj potwór o imieniu Polska. 
+- Co chwila krzyczy, że jest głodna, więc znajduję dla niej jedzenie.
+- Co innego miałbym zrobić? Jest wielka i straszna, więc wolę być posłuszny.
+"
+align = 1
+valign = 1
+autowrap = true
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_Button2_pressed"]
